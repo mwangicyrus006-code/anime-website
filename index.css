@@ -22,18 +22,20 @@ a { text-decoration: none; }
     background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
+@media (max-width: 768px) {
 .hero-text {
     position: relative;
     z-index: 1;
     color: #00ffff;
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
+}
 }
 .hero-text h2 {
     color: #ff00ff;
     text-shadow: 0 0 8px #ff00ff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 /* Hero Particles */
@@ -264,10 +266,11 @@ battle-container {
     font-size: 22px;
     font-weight: bold;
 }
+@media (max-width: 768px) {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+} 
 }
 .nav-links li a {
     text-decoration: none;
