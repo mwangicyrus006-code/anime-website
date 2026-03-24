@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Anime universe - Home</title>
+    <div class="rating">
+        <span onclick="rate(this,1)">⭐</span>
+        <span onclick="rate(this,2)">⭐</span>
+        <span onclick="rate(this,3)">⭐</span>
+        <span onclick="rate(this,4)">⭐</span>
+        <span onclick="rate(this,5)">⭐</span>
+    </div>
+</head>
+<body>
+    <script>
+        function rate(el, num) {
+            let stars = 
+            el.parentElement.children;
+            for (let i = 0; i < stars.length; i++) {
+                stars[i].classList.remove("active");
+            }
+        }
+    </script>
+    <header>
+    <nav class="navbar">
+     <div class="logo">Anime Universe</div>
+     <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="About.html">About</a></li>
+
+        <li><a href="Anime News.html">Anime News</a></li>
+       
+        <li><a href="Hidden Gems.html">Hidden Gems</a></li>
+
+        <li><a href="Characters.html">Characters</a></li>
+
+        <li><a href="Trailers.html">Trailers</a></li>
+        
+        <li><a href="contacts.html">contacts</a></li>
+     </ul>
+    </nav>
+    </header>
+
+    <! _ _ Hero Banner _ _>
+    <section id="hero">
+        <div class="hero-text">
+            Anime universe
+            <h2>Discover Your Favorite Anime</h2>
+        <div class="particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+    <! _ _ Main News Section _ _>
+    <section id="main-news">
+        <div class="container">
+            <h2>Anime News</h2>
+            <div class="news-cards">
+
+                <! _ _ News Card 1 _ _>
+                <div class="news-card">
+                    <h3>Jujutsu Kaisen Season 3</h3>
+                    <p>Jujutsu Kaisen continues after the  Shibuya Incident arc. Fans expect more 
+                        epic battles with Gojo and new curses.
+                    </p>
+                    <span>Jan 15, 2026</span>
+                    <a href="Anime News.html#gojo-satoru" class="read-more-btn">Read More</a>
+                </div>
+                <! _ _ News Card 2 _ _>
+                <div class="news-card">
+                    <h3>Demon Slayer New Movie</h3>
+                    <p>A new Demon slayer movie continues the story after the Hashira Training arc with intense
+                        fights and cinematic animation
+                    </p>
+                    <span>Feb 10, 2026</span>
+                    <a href="Anime News.html#tanjiro-kamado" class="read-more-btn">Read More</a>
+                </div>
+                <! _ _ News Card 3 _ _>
+                <div class="news-card">
+                    <h3>Solo Leveling Season 3</h3>
+                    <p>Solo Leveling Season 3 continues Sung Jin-woo's journey with stronger monsters and 
+                        epic battles.
+                    </p>
+                    <span>March 5, 2026</span>
+                    <a href="Anime News.html#sung-jinwoo" class="read-more-btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <! _ _ Cyrus' picks Teaser _ _>
+        <section id="cyrus-picks-home">
+            <h2>Cyrus' Picks- My Weekly Reccomendation</h2>
+            <div class="pick-cards">
+                <div class="pick-card" id="gojo-satoru">
+                    <img src="images/Gojo_Satoru_Domain_Expansion___Unlimited_Void_Close-Up_Wallpaper___Jujutsu_Kaisen_Anime_Art.jpg" alt="Gojo_Satoru_Domain_Expansion___Unlimited_Void_Close-Up_Wallpaper___Jujutsu_Kaisen_Anime_Art">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p><b>Gojo Satoru</b></p>
+                    <p>One of the strongest sorcerers with flashy techniques and a confident personality.</p>
+                </div>
+                <div class="pick-card" id="tanjiro kamado">
+                    <img src="images/Tanjiro_kamado_.jpg" alt="Tanjiro_kamado_">
+                    <h3>Demon Slayer</h3>
+                    <p><b>Tanjiro Kamado</b></p>
+                    <p>Determined demon slayer with a heart of gold and incredible sword skills.</p>
+                </div>
+                <div class="pick-card" id="sung-jinwoo">
+                    <img src="images/pinterest_1768121762030.jpg" alt="pinterest_1768121762030">
+                    <h3>Solo Leveling</h3>
+                    <p><b>Sung Jin-woo</b></p>
+                    <p>The weakest hunter turned strongest, dominating monsters in Solo Leveling.</p>
+                </div>
+            </div>
+                <div style="text-align: center; margin-top: 25px; ">
+                    <a href="Characters.html" class="view-all-btn">View all characters</a>
+                </div>
+        </section>
+
+        <! _ _ Weekly Spotlight Battle _ _>
+        <section id="weekly spotlight battle">
+            <h2>Weekly Battle: Chose Your Favorite!</h2>
+            <div class="battle-container">
+                <div class="battle-card" onclick="vote('char1')">
+                    <img src="images/Gojo_Satoru.jpg" alt="Gojo_Satoru">
+                    <h3>Gojo Satoru</h3>
+                    <p>Limitless & Six eyes make him nearly unbeatable.</p>
+                </div>
+                <div class="vs">VS</div>
+                <div class="battle-card" onclick="vote('char2')">
+                    <img src="images/3096293491075979_vdm.jpg" alt="Sukuna">
+                    <h3>Sukuna</h3>
+                    <p>The King of Curses with immense power and a deadly technique.</p>
+                </div>
+            </div>
+            <div class="vote-bar-container">
+                <div class="vote-bar" id="char1-bar"></div>
+                <div class="vote-bar" id="char2-bar"></div>
+            </div>
+            <p id="battle-result"></p>
+        </section>
+        <script>
+            let char1votes = 0;
+            let char2votes = 0;
+
+            function vote(choice) {
+                if(choice === 'char1') char1votes++;
+                else char2votes++;
+                
+                let total = char1votes + char2votes;
+                let char1Percent = ((char1votes / total)* 100).toFixed(1);
+                let char2Percent = ((char2votes / total )* 100).toFixed(1);
+
+                document.getElementById('char1-bar').style.width = char1Percent + '%';
+                document.getElementById('char2-bar').style.width = char2Percent + '%';
+            }
+        </script>
+    
+</body>
+</html>

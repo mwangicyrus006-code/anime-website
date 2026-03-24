@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    font-size: 3rem;
+    padding: 40px 20px;
+}
+header h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+header p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+.gem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+.gem-card {
+    background: rgba(0, 0, 0, 0.7);
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.gem-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+}
+.gem-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.gem-card h3 {
+    color: #ff69b4;
+    text-shadow: 0 0 5px #ff69b4;
+    margin-bottom: 10px;
+}
+.gem-card p {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    background: #00ffff;
+    color: #000;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #888;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+footer a {
+    color: #00ffff;
+    margin: 0 10px;
+}
+@media (max-width: 700px) {
+    .gem-card {
+        width: 90%;
+    }
+}

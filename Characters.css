@@ -1,0 +1,25 @@
+body{
+    background-color: #0f0f0f;
+    color: white;
+    font-family: Arial;
+}
+.character {
+    background-color: #1a1a1a;
+    width: 250px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+.character img{
+    display: block;
+    width: 250px;
+    height: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}

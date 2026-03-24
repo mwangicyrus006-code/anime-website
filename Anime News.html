@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main News.css">
+    <title>AnimeVerse - News</title>
+</head>
+<body>
+    <! _ _ Main News Section _ _>
+    <section id="main-news">
+        <div class="container">
+            <h2>Anime News</h2>
+            <p>Stay updated with the latest anime releases, movies, and events</p>
+            <div class="search box">
+                <input type="text" id="searchInput" placeholder="Search News...">
+            </div>
+            <div class="news-cards">
+
+                <! _ _ News Card 1 _ _>
+                <div class="news-card">
+                    <h3>Jujutsu Kaisen Season 3</h3>
+                    <p>Jujutsu Kaisen continues after the  Shibuya Incident arc. Fans expect more 
+                        epic battles with Gojo and new curses.
+                    </p>
+                   <p>Here is a short clip of it:</p>
+                    <video width="400" controls>
+                   <source src="images/Jujutsu_Kaisen__Execution_English_Dub_Trailer__2025_(720p).mp4" type="Video/mp4">
+                    </video>
+                    <span>Jan 15, 2026</span>
+                    <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+                <! _ _ News Card 2 _ _>
+                <div class="news-card">
+                    <h3>Demon Slayer New Movie</h3>
+                    <p>A new Demon slayer movie continues the story after the Hashira Training arc with intense
+                        fights and cinematic animation
+                    </p>
+                    <p>Here is a short clip of it:</p>
+                     <video width="400" controls>
+                         <source src="images/Demon_Slayer__Kimetsu_no_Yaiba_Infinity_Castle___MAIN_TRAILER(720p).mp4" type="video/mp4">
+                     </video>
+                    <span>Feb 10, 2026</span>
+                        <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+                
+                <! _ _ News Card 3 _ _>
+                <div class="news-card">
+                    <h3>Solo Leveling Season 3</h3>
+                    <p>Solo Leveling Season 3 continues Sung Jin=woo's journey with stronger monsters and 
+                        epic battles.
+                    </p>
+                    <p>Here is a small clip of how it will be:</p>
+                    <video width="400" controls>
+                         <source src="images/Solo_Leveling_Season_3_-_Throne_of_Shadows_-___Fan_Trailer(720p).mp4"  type="video/mp4">
+                    </video>
+                    <span>March 5, 2026</span>
+                    <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+                <! _ _ News Card 4 _ _>
+                <div class="news-card">
+                    <h3>Kpop Demon Hunters 2 </h3>
+                    <p>Kpop Demon Hunters 2 continues....</p>
+                    <p>Here is a small clip of how it will be:</p>
+                     <video width="400" controls>
+                         <source src="images/Kpop_Demon_Hunters_2__2027____New_Trailer___Netflix(720p).mp4" type="video/mp4">
+                     </video>
+                    <span>It is said to be released in 2027</span>
+                        <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+
+                <! _ _ News Card 5 _ _>
+                <div class="news-card">
+                    <h3>My Hero Academia</h3>
+                   <p>My Hero Academia final season!!!!</p>
+                    <p>It continues........</p>
+                    <video width="400" controls>
+                        <source src="images/My_Hero_Academia_FINAL_SEASON___English_Dub_Trailer___Crunchyroll(720p).mp4" type="video/mp4">
+                    </video>
+                    <span>It was released on....</span>
+                    <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+                <! _ _ News Card 6_ _>
+                <div class="news-card">
+                    <h3>Anime Conventions 2026</h3>
+                    <p>Anime fans can look forward to major conventions in 2026, featuring exclusive panels,
+                        merchandise, and meet-and-greets with popular creators.
+                    </p>
+                    <span>March 1, 2026</span>
+                    <button class="like-btn" onclick="likeAnime(this)">
+                Like❤ <span>0</span>
+            </button>
+        </div>
+        <script>
+            function likeAnime(btn) {
+                let span = btn.querySelector("span");
+                let count = parseInt(span.innerText);
+                span.innerText = count + 1;
+            }
+        </script>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

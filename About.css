@@ -1,0 +1,20 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+h1, h2 {
+    color: gold;
+}
+P{
+    color: black;
+}
+ dt{
+    color: black;
+}
+dl{
+    color: blue;
+}
+ul li{
+    color: black;
+}
