@@ -270,6 +270,7 @@ battle-container {
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 15px;
 } 
 }
 .nav-links li a {
