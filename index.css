@@ -268,7 +268,7 @@ battle-container {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
