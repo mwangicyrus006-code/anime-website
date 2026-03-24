@@ -266,13 +266,11 @@ battle-container {
     font-size: 22px;
     font-weight: bold;
 }
-@media (max-width: 768px) {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 } 
-}
 .nav-links li a {
     text-decoration: none;
     color: white;
